@@ -104,9 +104,9 @@ export default async function PrivacyPolicyPage() {
                         <div className="space-y-4 text-slate-600">
                             <p>If you have any questions about this Privacy Policy or our data practices, please contact us:</p>
                             <div className="bg-slate-50 p-6 rounded-lg">
-                                <p><strong>Email:</strong> {contact.email}</p>
-                                <p><strong>Phone:</strong> {contact.phone}</p>
-                                <p><strong>Address:</strong> {contact.address}</p>
+                                <p><strong>Email:</strong> {contact?.email || "N/A"}</p>
+                                <p><strong>Phone:</strong> {contact?.phone || "N/A"}</p>
+                                <p><strong>Address:</strong> {contact?.address || "N/A"}</p>
                             </div>
                         </div>
                     </section>
